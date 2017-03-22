@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.master.cs" Inherits="CO5027.Masterpage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="index.css" rel="stylesheet" type="text/css" media="screen" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <ul>
+            <li><a href="Login.aspx">Login</a></li>
+            <li><a href="New arrival">New Perfume Collections!</a></li>
+            <li><a href="Cart.aspx">Add to Cart</a></li>
+
+            </ul>
+        </div>
+
+            <div id="Logo">
+
+                <img src="Image/arabesque.png" />
+
+             
+            </div>
+
+        <div id="Navigation2">
+
+        <ul>
+
+             <li><a href="Home.aspx">Homepage</a></li>
+             <li><a href="New Arrival.aspx">New Arrivals</a></li>
+             <li><a href="Perfume Collection.aspx">Products</a></li>
+             <li><a href="Contact Us.aspx">Contact Us Page</a></li>
+             <li><a href="About Us.aspx">About Us</a></li>
+
+        </ul>
+
+            </div>
+
+        <div id="content">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+        <div id="footer">
+
+            <p>&copy;Copyright 2017 | Arabesque Fragrance | Brunei Muara | +673 830 2435 </p>
+
+            <p><a href="http://jigsaw.w3.org/check?uri=referer">Validate HTML</a></p>
+            <p><a href="http://achecker.c/checker/?uri=referer">Check WCAG</a></p>
+            <p><a href="http://validator.w3.org/css-validator/check/referer">Validate CSS</a></p>
+        </div>
+
+    </form>
+</body>
+</html>
