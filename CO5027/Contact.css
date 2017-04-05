@@ -115,26 +115,12 @@ p span{
    
 }
 
-.gmap_canvas {
-    max-width: none !important;
-    background: none !important;
-}
 
-#gmap_canvas{
-    height:400px;
-    width:520px;
-
-}
-
-.gmap_canvas{
-    height:400px;
-    width:520px;
-
-}
 
 .map{
     overflow:hidden;height:400px;width:520px;
 }
+
 
 #footer { clear:both;padding: 100px 0; border-top: 1px #000 dotted; background-color:cornsilk }
 #footer {text-align:center; font-weight: bold; font-size: 14px; }

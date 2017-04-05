@@ -43,12 +43,12 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
-    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDFhl7fOj-BNO0wWKeVtJecmUAOoYffcis'></script>
-    <div class="map">
-    <a href='https://add-map.org/'></a> 
-    <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=eff3cc6cf43402fb674ce99f1fd576fd2bb628f1'></script>
-    <script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(4.8811621,114.95085340000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(4.8811621,114.95085340000003)});infowindow = new google.maps.InfoWindow({content:'<strong>Arabesque Fragrance is here!</strong><br>Jalan Batu Satu<br> Bandar Seri Begawan<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script> 
-
-        </div>
+  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDIAu9uQdfAoyNhrXYdXaR8o_G9eZSaG1E'></script>
+  <div style='overflow:hidden;height:400px;width:520px;'>
+  <div id='gmap_canvas' style='height:400px;width:520px;'></div>
+  </div> <a href='https://add-map.org/'></a> 
+  <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=0c347c8d2bb0b8a056e26002ceada10706801808'></script>
+  <script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(4.8811621,114.95085340000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(4.8811621,114.95085340000003)});infowindow = new google.maps.InfoWindow({content:'<strong>Arabesque Fragrance is here!</strong><br>Jalan Batu Satu<br> Bandar Seri Begawan<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+      
     </asp:Content>
 
