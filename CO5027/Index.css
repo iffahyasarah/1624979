@@ -114,9 +114,6 @@ p span{
     text-decoration: none;
 }
 
-#footer ul li a:hover {
-    background-color: AppWorkspace;
-}
 
 #Navigation2{
     float: left;
