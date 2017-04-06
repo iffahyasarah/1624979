@@ -68,7 +68,6 @@
   <ItemGroup>
     <Content Include="Admin.aspx" />
     <Content Include="Contact.aspx" />
-    <Content Include="Contact.css" />
     <Content Include="Default.aspx" />
     <Content Include="Image\anigif1.gif" />
     <Content Include="Image\arabesque burlesque.png" />

@@ -8,8 +8,12 @@
 }
 
 h2 {
+  
     margin-right: 200px;
+  
 }
+
+
 
 #header img {
     position: center;
@@ -41,6 +45,42 @@ h2 {
     font-size:17px;
     border-left: 1px solid black;
 
+
+
+}
+
+#Navigation1{
+    float: left;
+
+}
+
+#Navigation1 img {
+    height: auto;
+    width: auto
+   
+}
+
+
+#Navigation1 ul li {
+        display: inline;
+        text-decoration: none;
+        color: black;
+        list-style: none;
+        padding-left: 10px;
+        font-size: 17px;
+        border-left: 1px solid black;
+}
+
+p {
+    text-decoration:none;
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 40px;
+
+}
+
+p span{
+    color:red;
 
 
 }
@@ -88,6 +128,55 @@ h2 {
     color:antiquewhite;
 }
 
+
+body {background-color:floralwhite;}
+
+
+
+.cntctfrm {
+    width:450px;
+    Height:120px;
+}
+
+.cntctfrm {
+    width: 355px;
+    height: 30px;
+}
+
+.name  {
+    margin-left: 0px;
+    Width:154px;
+
+}
+
+.email {
+    margin-left: 0px;
+    Width:154px;
+}
+
+
+.subject {
+    margin-left: 0px;
+    Width:154px;
+}
+    
+.message{
+    margin-left: 0px;
+    Width:154px;
+}
+
+.sndbttn{
+
+}
+ #map {
+     height:100%;
+ }
+  
+#logo img{
+    padding-left: 400px;
+    padding-top: 10px;
+}
+
 #Navigation2 ul li{
     display:inline;
     text-decoration:none;
@@ -115,6 +204,7 @@ h2 {
     padding-bottom: 50px;
 }
 
+
 .Prdct1 {
     float: right;
     border: 5px solid black;
@@ -133,45 +223,10 @@ h2 {
     width: 100%;
 }
 
-/*
-.Prdct1 .prodtext {
-    position: absolute;
-    top: -100%;
-    left: 0px;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%; 
-    height: 100%;
-    color: #fff;
-    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; 
-    -o-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-}
-
-.Prdct1:hover .prodtext {
-    top: 0px;
-}
-
-.Prdct1 .prodtext h4 {
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    border-bottom: 2px solid black;
-    padding-bottom: 10px;
-    margin-top: 10px;
-}
-
-.Prdct1 .prodtext p {
-    margin: 15px 0px;
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-family: arial;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-*/
-
 #footer {clear:both;padding: 100px 0; border-top: 1px #000 dotted; background-color:AppWorkspace }
 #footer {text-align:center; font-weight: bold; font-size: 14px; }
 #footer a:link {color:black;text-decoration:dotted; }
+
+.newitemwrapper-contactmap {
+    margin: auto;
+}

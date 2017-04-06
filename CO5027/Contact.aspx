@@ -1,12 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masterpage.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="CO5027.Contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="Contact.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="Index.css" rel="stylesheet" type="text/css" media="screen" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
     <p>
-        <br />
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
         Name:</p>
        <div class="name"><asp:TextBox ID="TxtName" runat="server"></asp:TextBox></div>
         <span class="required">*</span>
@@ -34,21 +37,19 @@
 
     <br />
 
-    <asp:Literal ID="litResult" runat="server"></asp:Literal>
+    <asp:Literal ID="litResult" runat="server"></asp:Literal> 
 
-    
+    <br />
+
+ <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDIAu9uQdfAoyNhrXYdXaR8o_G9eZSaG1E'></script>
+ <div style='overflow:hidden;height:400px;width:520px;'>
+ <div id='gmap_canvas' style='height:400px;width:520px;'></div>
+ <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+ </div> <a href='https://add-map.org/'></a> 
+ <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=50a9de92227ed0c82a3f6a8f11747c4f4f0a6159'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(4.8811621,114.95085340000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(4.8811621,114.95085340000003)});infowindow = new google.maps.InfoWindow({content:'<strong>Arabesque Fragrance is here!</strong><br>Jalan Batu Satu<br> Bandar Seri Begawan<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+         
 
 </asp:Content>
 
 
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-
-  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDIAu9uQdfAoyNhrXYdXaR8o_G9eZSaG1E'></script>
-  <div style='overflow:hidden;height:400px;width:520px;'>
-  <div id='gmap_canvas' style='height:400px;width:520px;'></div>
-  </div> <a href='https://add-map.org/'></a> 
-  <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=0c347c8d2bb0b8a056e26002ceada10706801808'></script>
-  <script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(4.8811621,114.95085340000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(4.8811621,114.95085340000003)});infowindow = new google.maps.InfoWindow({content:'<strong>Arabesque Fragrance is here!</strong><br>Jalan Batu Satu<br> Bandar Seri Begawan<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-      
-    </asp:Content>
 

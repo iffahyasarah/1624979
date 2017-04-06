@@ -48,7 +48,7 @@
                         <li><a href="https://www.facebook.com"> <img src="<%=("Image/facebook.png") %>"/></a></li>
                         <li><a href="https://www.instagram.com"> <img src="<%=("Image/instagram.jpg") %>"/></a></li>
                     </ul>
-            <p><a href="admin.aspx">Admin</a>
+            <p><a href="admin.aspx">Admin</a></p>
             <p>Copyright &copy; Arabesque Fragrance | Bandar Seri Begawan | +673 830 2435 </p>
             <p><a href="https://validator.w3.org/">Validate HTML</a></p>
             <p><a href="http://achecker.c/checker/?uri=referer">Check WCAG</a></p>
