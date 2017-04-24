@@ -14,7 +14,6 @@ h2 {
 }
 
 
-
 #header img {
     position: center;
     padding-left: 0px;
@@ -44,7 +43,6 @@ h2 {
     padding-left:10px;
     font-size:17px;
     border-left: 1px solid black;
-
 
 
 }
@@ -220,7 +218,8 @@ body {background-color:floralwhite;}
     width: 100%;
 }
 
-#footer {clear:both;padding: 100px 0; border-top: 1px #000 dotted; background-color:AppWorkspace }
+
+#footer {clear:both;padding: 100px 0; border-top: 1px #000 dotted;}
 #footer {text-align:center; font-weight: bold; font-size: 14px; }
 #footer a:link {color:black;text-decoration:dotted; }
 

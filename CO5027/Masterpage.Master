@@ -22,15 +22,15 @@
         </div>
         
          <div id="Logo">
-                <img src="Image/arabesque.png"/>
+                <img src="Image/arabesque.png" alt="logo"/>
          </div>
 
         <div id="Navigation2">
          <ul>
              <li><a href="Default.aspx">Homepage</a></li>
-             <li><a href="Perfume Collection.aspx">Products</a></li>
+             <li><a href="PerfumeCollection.aspx">Products</a></li>
              <li><a href="Contact.aspx">Contact Us</a></li>
-             <li><a href="About Us.aspx">About Us</a></li>
+             <li><a href="AboutUs.aspx">About Us</a></li>
          </ul>
          </div>
 
@@ -45,8 +45,8 @@
         <div id="footer">
               <h1>Please get in touch with us at our social media!</h1>
                     <ul class="social-media-icons">
-                        <li><a href="https://www.facebook.com"> <img src="<%=("Image/facebook.png") %>"/></a></li>
-                        <li><a href="https://www.instagram.com"> <img src="<%=("Image/instagram.jpg") %>"/></a></li>
+                        <li><a href="https://www.facebook.com"><img src="Image/facebook.png" alt="facebook"/></a></li>
+                        <li><a href="https://www.instagram.com"> <img src="Image/instagram.jpg" alt="instagram" /></a></li>
                     </ul>
             <p><a href="admin.aspx">Admin</a></p>
             <p>Copyright &copy; Arabesque Fragrance | Bandar Seri Begawan | +673 830 2435 </p>

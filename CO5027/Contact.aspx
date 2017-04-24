@@ -41,13 +41,7 @@
 
     <br />
 
- <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDIAu9uQdfAoyNhrXYdXaR8o_G9eZSaG1E'></script>
- <div style='overflow:hidden;height:400px;width:520px;'>
- <div id='gmap_canvas' style='height:400px;width:520px;'></div>
- <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
- </div> <a href='https://add-map.org/'></a> 
- <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=50a9de92227ed0c82a3f6a8f11747c4f4f0a6159'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(4.8811621,114.95085340000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(4.8811621,114.95085340000003)});infowindow = new google.maps.InfoWindow({content:'<strong>Arabesque Fragrance is here!</strong><br>Jalan Batu Satu<br> Bandar Seri Begawan<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-         
+ <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDIAu9uQdfAoyNhrXYdXaR8o_G9eZSaG1E'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/'>google maps iframe embed</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=a4437e497b7ab4a67da119075c7979513e5e5be4'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(4.8811621,114.95085340000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(4.8811621,114.95085340000003)});infowindow = new google.maps.InfoWindow({content:'<strong>Arabesque Fragrance is here!</strong><br>Jalan Batu Satu<br> Bandar Seri Begawan<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 
 </asp:Content>
 

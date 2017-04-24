@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div id="header">
-        <img src="Image/anigif1.gif"/>
+        <img src="Image/anigif1.gif" alt="banner"/>
     </div>
 
 
@@ -13,44 +13,44 @@
                     <div class="newitemwrapper-spotlight">
                         <h2>New Arrivals!</h2>
                         <div class="Prdct1" id="prod1">
-                            <a href="Perfume Collection.aspx"/>                  
-                                <img src="Image/perfume1.jpg" />
+                            <a href="PerfumeCollection.aspx"></a>              
+                                <img src="Image/perfume1.jpg"  alt="PerfumeCollection"/>
                             <div class="prodtext">   
                             </div>
                         </div>
                         </div>
                         <div class="Prdct1" id="prod2">
-                            <img src="Image/perfume2.jpg" />
+                            <img src="Image/perfume2.jpg"  alt="PerfumeCollection"/>
                             <div class="prodtext">
                           </div>
                         </div>
                         <div class="Prdct1" id="prod3">
-                            <img src="Image/perfume3.jpg"/>
+                            <img src="Image/perfume3.jpg"  alt="PerfumeCollection"/>
                             <div class="prodtext">
                             </div>
                         </div>
                         <div class="Prdct1" id="prod4">
-                            <img src="Image/perfume4.jpg"/>
+                            <img src="Image/perfume4.jpg"  alt="PerfumeCollection"/>
                             <div class="prodtext">  
                             </div>
                         </div>
                         <div class="Prdct1" id="prod5">
-                            <img src="Image/perfume5.jpg"/>
+                            <img src="Image/perfume5.jpg"  alt="PerfumeCollection"/>
                             <div class="prodtext">
                            </div>
                         </div>
                         <div class="Prdct1" id="prod6">
-                            <img src="Image/perfume6.jpg"/>
+                            <img src="Image/perfume6.jpg"  alt="PerfumeCollection"/>
                             <div class="prodtext">
                             </div>
                         </div>
                         <div class="Prdct1" id="prod7">
-                            <img src="Image/perfume7.jpg"/>
+                            <img src="Image/perfume7.jpg"  alt="PerfumeCollection"/>
                             <div class="prodtext">
                             </div>
                         </div>
                         <div class="Prdct1" id="prod8">
-                            <img src="Image/perfume8.jpg"/>
+                            <img src="Image/perfume8.jpg"  alt="PerfumeCollection"/>
                             <div class="prodtext">
                             </div>
                         </div>
