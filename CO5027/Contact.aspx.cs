@@ -32,7 +32,7 @@ namespace CO5027
             smtpClient.EnableSsl = true;
 
             //create credentials - e.g. username and password for the account
-            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("arabesquefragrance@gmail.com", "Arabesque93");
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("arabesquefragrance@gmail.com", "Arabesque00");
             smtpClient.Credentials = credentials;
             msg = new MailMessage("narabesquefragrance@gmail.com", TxtEmail.Text);
             msg.Subject = "comment from " + TxtName.Text;

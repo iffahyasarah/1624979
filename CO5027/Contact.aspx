@@ -12,22 +12,25 @@
     <p>
         Name:</p>
        <div class="name"><asp:TextBox ID="TxtName" runat="server"></asp:TextBox></div>
-        <span class="required">*</span>
-    <p>
+        <span class="required">* </span><asp:RequiredFieldValidator ID="RequiredValName" runat="server" ErrorMessage="Name cannot be blank!" ControlToValidate="TxtName"></asp:RequiredFieldValidator>
+  
+    &nbsp;<p>
         Email:</p>
         <div class="email"><asp:TextBox ID="TxtEmail" runat="server"></asp:TextBox></div>
-        <span class="required">*</span>
-
+        <span class="required">*</span><asp:RegularExpressionValidator ID="RequiredValEmail" runat="server" ErrorMessage="Invalid Email Address" ControlToValidate="TxtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+    <asp:RequiredFieldValidator ID="RequiredFieldValid" runat="server" ErrorMessage="Email cannot be blank!" ControlToValidate="TxtEmail"></asp:RequiredFieldValidator>
     <p>
         Subject:</p>
         <div class="subject"><asp:TextBox ID="TxtSubject" runat="server"></asp:TextBox></div>
-        <span class="required">*</span>
-    <p>
+        <span class="required">*</span><asp:RequiredFieldValidator ID="RequiredValSubject" runat="server" ErrorMessage="Subject cannot be blank!" ControlToValidate="TxtSubject"></asp:RequiredFieldValidator>
+    
+    &nbsp;<p>
         Message:</p>
         <div class="message"><asp:TextBox ID="TxtMessage" runat="server" TextMode="MultiLine"></asp:TextBox></div>
-         <span class="required">*</span>
+         <span class="required">*</span><asp:RequiredFieldValidator ID="RequiredValMessage" runat="server" ErrorMessage="Message cannot be blank!" ControlToValidate="TxtSubject"></asp:RequiredFieldValidator>
+  
    
-    <p>
+    &nbsp;<p>
 
         &nbsp;</p>
        <div class="sendbttn"><asp:Button ID="BtnSendEmail" runat="server" OnClick="Button1_Click" Text="Send"/></div>
@@ -41,8 +44,28 @@
 
     <br />
 
- <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDIAu9uQdfAoyNhrXYdXaR8o_G9eZSaG1E'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/'>google maps iframe embed</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=a4437e497b7ab4a67da119075c7979513e5e5be4'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(4.8811621,114.95085340000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(4.8811621,114.95085340000003)});infowindow = new google.maps.InfoWindow({content:'<strong>Arabesque Fragrance is here!</strong><br>Jalan Batu Satu<br> Bandar Seri Begawan<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+    <h1>You can find us at the given location</h1>
+     <div id="map"></div>
+     <script>
+        function initMap() {
+        var myLatLng = {lat: 4.885478, lng: 114.931605};
 
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 18,
+        center: myLatLng
+  });
+
+        var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+  });
+     }
+        </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCbm7BnS80K4OBIUG4SZGN0JLL8yWCpUQ&callback=initMap"
+    async defer></script>
+    <br />
 </asp:Content>
 
 
