@@ -13,5 +13,10 @@ namespace CO5027
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            GridView2.DataBind();  
+        }
     }
 }

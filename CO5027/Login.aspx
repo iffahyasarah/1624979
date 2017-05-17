@@ -4,63 +4,45 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-     <title></title>
-     <link rel="stylesheet" href="Index.css" type="text/css" />
-
-     </head><body><form id="form1" runat="server">
-
-
-    <div id="loginform">
-    <div class="loginform">
-        LOG IN
-        <p>
-            Username:</p>
-        <p>
-            &nbsp;<asp:TextBox ID="usrnme" runat="server"></asp:TextBox>
-        </p>
-        <p>
-            Password:<br />
-            <asp:TextBox ID="txtpswrd" runat="server"></asp:TextBox>
-        </p>
-        
-        <asp:Button ID="BttnLgn" runat="server" Text="Login" OnClick="BttnLgn_Click" />
-
-        <asp:Literal ID="LiteralLgn" runat="server"></asp:Literal> 
-        </div>
-    </div>
-
-         <div id="rgstrfrm">
-         <div class="registerform">
-             Register
-             <p>
-                 Email:
-             </p>
-            <br/>
-             <asp:TextBox ID="TxtEml" runat="server"></asp:TextBox>
-
-             <br />
-
-
-             Username:
-             <p>
-                 <asp:TextBox ID="TxtUsrnme" runat="server"></asp:TextBox>  
-             </p>
-             password:
-             <p>
-
-                 <asp:TextBox ID="TxtPsswrd" runat="server"></asp:TextBox>
-                 </p>
-                Confirm Password:
-              <p>
-                  <asp:TextBox ID="TxtCnfrmPsswrd" runat="server"></asp:TextBox>
-              </p>
-
-             <asp:Button ID="btnRegister" runat="server" Text="Register" />
-             <asp:Literal ID="LiteralRegister" runat="server"></asp:Literal>
-             </div>
-
-             </div>
-    </form>
-   
+    <title></title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; font-size: small">
+   <form id="form1" runat="server">
+      <div>
+         <h4 style="font-size: medium">Log In</h4>
+         <hr />
+         <asp:PlaceHolder runat="server" ID="LoginStatus" Visible="false">
+            <p>
+               <asp:Literal runat="server" ID="StatusText" />
+            </p>
+         </asp:PlaceHolder>
+         <asp:PlaceHolder runat="server" ID="LoginForm" Visible="false">
+            <div style="margin-bottom: 10px">
+               <asp:Label runat="server" AssociatedControlID="UserName">User name</asp:Label>
+               <div>
+                  <asp:TextBox runat="server" ID="UserName" />
+               </div>
+            </div>
+            <div style="margin-bottom: 10px">
+               <asp:Label runat="server" AssociatedControlID="Password">Password</asp:Label>
+               <div>
+                  <asp:TextBox runat="server" ID="Password" TextMode="Password" />
+               </div>
+            </div>
+            <div style="margin-bottom: 10px">
+               <div>
+                  <asp:Button runat="server" OnClick="SignIn" Text="Log in" />
+               </div>
+            </div>
+         </asp:PlaceHolder>
+         <asp:PlaceHolder runat="server" ID="LogoutButton" Visible="false">
+            <div>
+               <div>
+                  <asp:Button runat="server" OnClick="SignOut" Text="Log out" />
+               </div>
+            </div>
+         </asp:PlaceHolder>
+      </div>
+   </form>
 </body>
 </html>

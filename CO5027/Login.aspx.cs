@@ -1,11 +1,8 @@
-﻿using Microsoft.Owin.Security;
-using Microsoft.AspNet.Identity;
+﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace CO5027
@@ -15,52 +12,48 @@ namespace CO5027
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (!IsPostBack)
+            {
+                if (User.Identity.IsAuthenticated)
+                {
+                    StatusText.Text = string.Format("Hello {0}!!", User.Identity.GetUserName());
+                    LoginStatus.Visible = true;
+                    LogoutButton.Visible = true;
+                }
+                else
+                {
+                    LoginForm.Visible = true;
+                }
+            }
         }
 
-        protected void TextBox2_TextChanged(object sender, EventArgs e)
+        protected void SignIn(object sender, EventArgs e)
         {
-
-        }
-
-        protected void BttnLgn_Click(object sender, EventArgs e)
-
-        {
-            var identityDbContext = new IdentityDbContext("IdentityConnectionString");
-            var userStore = new UserStore<IdentityUser>(identityDbContext);
+            var userStore = new UserStore<IdentityUser>();
             var userManager = new UserManager<IdentityUser>(userStore);
-            var user = userManager.Find(usrnme.Text, txtpswrd.Text);
+            var user = userManager.Find(UserName.Text, Password.Text);
+
             if (user != null)
             {
-                //todo: log user in / instruct user to log in
+                var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
+                var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
+
+                authenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, userIdentity);
+                Response.Redirect("~/Default.aspx");
             }
             else
             {
-                LiteralLgn.Text = "Invalid username or password.";
+                StatusText.Text = "Invalid username or password.";
+                LoginStatus.Visible = true;
             }
         }
 
-        private void LogUserIn(UserManager<IdentityUser> usermanager, IdentityUser user)
+        protected void SignOut(object sender, EventArgs e)
         {
             var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
-            var userIdentity = usermanager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
-            authenticationManager.SignIn(new Microsoft.Owin.Security.AuthenticationProperties() { }, userIdentity);
-            //Note: user is automatically redirected if tryingto access another page
-        }
+            authenticationManager.SignOut();
+            Response.Redirect("~/Login.aspx");
 
-        protected void btnRegister_Click(object sender, EventArgs e)
-        {
-            var identityDBContext = new IdentityDbContext("IdentityConnectionString");
-            //create user store and user manager
-            var userStore = new UserStore<IdentityUser>(identityDBContext);
-            var manager = new UserManager<IdentityUser>(userStore);
-            //create user
-            var user = new IdentityUser() { UserName = TxtUsrnme.Text, Email = TxtEml.Text };
-            IdentityResult result = manager.Create(user, TxtPsswrd.Text);
-            if (result.Succeeded)
-            {
-            }
         }
-
     }
 }
-
